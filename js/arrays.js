@@ -26,10 +26,31 @@ const overwrite = function(arr, value) {
 //console.log(overwrite(myArray, myString))
 
 //Step 3
-let joinedArray = myArray.join(', ')
-
-console.log(joinedArray)
+const joinArr = function(arr) {
+    let joinedArray = arr.join(', ')
+    return joinedArray
+}
+console.log(`"${joinArr(myArray)}"`);
 
 //Part 2
 
 //Step 1
+const removeElm = function(arr) {
+    let removeElement = arr.splice(arr.length -2, 1)
+    return arr
+}
+console.log(removeElm(myArray))
+
+//step 2
+let alpha = [2,3,4,5,6,]
+let beta = [14,24,34,36,34]
+
+const concat = function(arr) {
+    let copyValues = arr.push.apply(alpha, beta)
+    return arr
+}
+
+console.log(concat(alpha, beta))
+
+
+
