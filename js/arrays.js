@@ -45,9 +45,9 @@ console.log(removeElm(myArray))
 let alpha = [2,3,4,5,6,]
 let beta = [14,24,34,36,34]
 
-const concat = function(arr) {
-    let copyValues = arr.push.apply(alpha, beta)
-    return arr
+const concat = (arr1, arr2) => {
+    let copyValues = arr2.push(...arr1)
+    return arr2 
 }
 
 console.log(concat(alpha, beta))
