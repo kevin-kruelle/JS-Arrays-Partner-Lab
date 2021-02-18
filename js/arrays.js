@@ -74,5 +74,10 @@ console.log(move(beta, alpha))
 
 //Step 2
 const swap = (arr, a, b) => {
-    
+    let temp = arr[a];
+    arr[a] = arr[b];
+    arr[b] = temp;
+    return arr
 }
+
+console.log(swap(alpha, 2, 4))
