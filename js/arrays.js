@@ -30,7 +30,7 @@ const joinArr = function(arr) {
     let joinedArray = arr.join(', ')
     return joinedArray
 }
-console.log(`"${joinArr(myArray)}"`);
+//console.log(`"${joinArr(myArray)}"`);
 
 //Part 2
 
@@ -39,7 +39,7 @@ const removeElm = function(arr) {
     let removeElement = arr.splice(arr.length -2, 1)
     return arr
 }
-console.log(removeElm(myArray))
+//console.log(removeElm(myArray))
 
 //step 2
 let alpha = [2,3,4,5,6,]
@@ -70,7 +70,7 @@ const move = (arr1, arr2) => {
     return arr1
 }
 
-console.log(move(beta, alpha))
+//console.log(move(beta, alpha))
 
 //Step 2
 const swap = (arr, a, b) => {
@@ -80,4 +80,16 @@ const swap = (arr, a, b) => {
     return arr
 }
 
-console.log(swap(alpha, 2, 4))
+//console.log(swap(alpha, 2, 4))
+
+//step 3
+
+const find = (arr, value) => {
+    if (arr.includes(value)) {
+        return console.log('Yay!');
+    } else {
+        return console.log('This number is not an array')
+    }
+}
+
+find(alpha. 2)
